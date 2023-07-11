@@ -1,0 +1,27 @@
+{
+    "_id": "83951cfc-fd4e-4012-9fef-b8632acd6fe0",
+    "colName": "test token",
+    "created": "2023-07-11T10:20:54.914Z",
+    "sortNum": 20000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b4a65c43-ca7d-4485-a80b-3ba628e605ec",
+            "colId": "83951cfc-fd4e-4012-9fef-b8632acd6fe0",
+            "containerId": "",
+            "name": "protected",
+            "url": "http://localhost:8000/api/protected",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-11T10:21:24.781Z",
+            "modified": "2023-07-11T10:21:46.929Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODkwNzA4MTgsImV4cCI6MTY4OTA3NDQxOCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidGVzdEB0ZXN0LmNvbSJ9.ExIOKKdiSwgLpW7Ebgo6MPdZ-AZAYa0V2W2J1x0yk26DtVtQTAfCOg3ailLGUvSDmvqMPaAe83s4WeSlZWVnzq2Ue2ahbJ2_7f6NuhZHkrXjFyY28-i9cangRBomS9lO3VaRFrmsoPJRiycTzOUi4rpCLEnVHXE9my3AN8ESBAFjr5SlvFbNfov9hA2nusFwkL7foA84of1lXykZ8gXMfeIXHptXv0k1Bs1RnlL4ZQcVxnSC4pyhsphz2LktEVI0eZ92SlDyJBxXeX5JLnKAwaM5BfmoLVBIIeen80GoU4SuRS-In_Y0tr_gXGufaR9GZ-0JzgI7BoahBchZYDRxBA"
+            },
+            "tests": []
+        }
+    ]
+}
