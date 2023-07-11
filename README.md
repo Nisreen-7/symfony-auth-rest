@@ -220,4 +220,8 @@ security:
         - { path: /api/station, roles: PUBLIC_ACCESS, methods:[GET] }
         - { path: /api/station, roles: ROLE_USER }
 ```
+<<<<<<< HEAD
 Ici, toutes les routes commençant par /api/admin ne seront accessibles que par les user avec un rôle ROLE_ADMIN, la route /api/station en GET sera accessible par n'importe qui, toutes les autres méthodes de la route /api/station ne seront accessible que par les user avec le rôle ROLE_USER
+=======
+Ici, toutes les routes commençant par /api/admin ne seront accessibles que par les user avec un rôle ROLE_ADMIN, la route /api/station en GET sera accessible par n'importe qui, toutes les autres méthodes de la route /api/station ne seront accessible que par les user avec le rôle ROLE_USER
+>>>>>>> ae57f07ca63b95ad4f804a6d3c4c273e32ca35d9
