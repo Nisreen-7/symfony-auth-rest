@@ -44,4 +44,9 @@ class AuthController extends AbstractController
         return $this->json($user, 201);
 
     }
+
+    #[Route('/api/protected', methods: 'GET')]
+    public function protectedRoute() {
+        return $this->json($this->getUser());
+    }
 }

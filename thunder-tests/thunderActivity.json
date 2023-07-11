@@ -36,5 +36,42 @@
             "form": []
         },
         "tests": []
+    },
+    {
+        "_id": "4dfa9be9-442b-4644-89eb-aedcdcc283cf",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:8000/api/login",
+        "url": "http://localhost:8000/api/login",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-07-11T08:59:19.990Z",
+        "modified": "2023-07-11T08:59:19.990Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"username\":\"test@test.com\",\n  \"password\": \"1234\"\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "2342b289-287a-4214-89cc-11a260feac09",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:8000/api/protected",
+        "url": "http://localhost:8000/api/protected",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-07-11T09:06:26.011Z",
+        "modified": "2023-07-11T09:09:01.011Z",
+        "headers": [],
+        "params": [],
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODkwNjYyODYsImV4cCI6MTY4OTA2OTg4Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidGVzdEB0ZXN0LmNvbSJ9.ABKjmf1ZQ9-GVGspBgOhgHTsHjnBPDrxMW5PlzswmOLfqsmHblqK6tywxLgHy-aAF2GmvA_DiTCSHB6XcEyMlW0UfrrgRnHn1E_g4c7fHkEVgkRpgdmAvXskm-DtfqmwZr5XReNYRS5np8y4JyA2uiSAYcg7ntKmbGpyJHB1L43mA9TnoVJvQHxjXICbC5slwqHALk6pL5mROyyENNU0VKLyQSkE9LsoMGwNa7U3WSEX2UfEnundOe8VulbCUV6MapVgjLIBgfzTx0hCtBq1oIASkbuveyD33G6LpiOKk5wfdhc_KsF_ux0VLP59uEWJU1PUr2bErHLSRyS1bXeeaA"
+        },
+        "tests": []
     }
 ]
