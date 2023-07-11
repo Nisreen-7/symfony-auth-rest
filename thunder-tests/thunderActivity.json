@@ -1,0 +1,40 @@
+[
+    {
+        "_id": "03c99ede-e8c5-4be6-9065-b89b74cf2db6",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:8000/api/user",
+        "url": "http://localhost:8000/api/user",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-07-11T08:03:31.729Z",
+        "modified": "2023-07-11T08:03:31.729Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"email\":\"test@test.com\",\n  \"password\": \"1234\"\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "fa09c6f0-b6ae-4657-a008-369bb8c801c6",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost:8000/api/user",
+        "url": "http://localhost:8000/api/user",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-07-11T08:03:39.958Z",
+        "modified": "2023-07-11T08:21:16.539Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"email\":\"pour@ttest.qsdf\",\n  \"password\": \"1234\"\n}",
+            "form": []
+        },
+        "tests": []
+    }
+]
