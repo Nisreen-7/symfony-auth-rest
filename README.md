@@ -20,15 +20,10 @@ Projet dans lequel on utilise Symfony Security et le Lexik JWT Bundle pour crée
 3. Pour tester le token, faire une requête vers http://localhost:8000/api/protected en GET en mettant dans l'onglet Auth -> Bearer le token copié précédemment
 
 
-## Exercices
-### Créer le front et le formulaire d'inscription
-1. Générer un projet `angular-auth` avec routing
-2. Générer un HomeComponent et lui assigner la route '/'
-3. Rajouter le HttpClientModule et le FormsModule dans l'application
-4. Générer un RegisterComponent et le lier à la route '/register'
-5. Créer un fichier entities.ts et dedans faire une interface User qui va reprendre les propriétés de l'entité PHP
-6. Générer un AuthService et dedans faire une méthode addUser(user:User) qui va faire un post sur la route /api/user du serveur
-7. Dans le RegisterComponent faire un formulaire avec email et mot de passe et faire qu'au submit ça fasse un addUser
+
+### Angular Material
+1. En suivant ce getting started, ajouter Angular Material à votre projet : https://material.angular.io/guide/getting-started#install-angular-material
+2. Modifier le template du RegisterComponent pour y faire du style avec les composants de angular-material, par exemple une Card avec des des Form Field dedans
 
 
 ## L'Authentification
