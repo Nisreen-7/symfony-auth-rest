@@ -20,15 +20,10 @@ Projet dans lequel on utilise Symfony Security et le Lexik JWT Bundle pour crée
 3. Pour tester le token, faire une requête vers http://localhost:8000/api/protected en GET en mettant dans l'onglet Auth -> Bearer le token copié précédemment
 
 
-## Exercices
-### Créer le front et le formulaire d'inscription
-1. Générer un projet `angular-auth` avec routing
-2. Générer un HomeComponent et lui assigner la route '/'
-3. Rajouter le HttpClientModule et le FormsModule dans l'application
-4. Générer un RegisterComponent et le lier à la route '/register'
-5. Créer un fichier entities.ts et dedans faire une interface User qui va reprendre les propriétés de l'entité PHP
-6. Générer un AuthService et dedans faire une méthode addUser(user:User) qui va faire un post sur la route /api/user du serveur
-7. Dans le RegisterComponent faire un formulaire avec email et mot de passe et faire qu'au submit ça fasse un addUser
+
+### Angular Material
+1. En suivant ce getting started, ajouter Angular Material à votre projet : https://material.angular.io/guide/getting-started#install-angular-material
+2. Modifier le template du RegisterComponent pour y faire du style avec les composants de angular-material, par exemple une Card avec des des Form Field dedans
 
 
 ## L'Authentification
@@ -220,8 +215,13 @@ security:
         - { path: /api/station, roles: PUBLIC_ACCESS, methods:[GET] }
         - { path: /api/station, roles: ROLE_USER }
 ```
-<<<<<<< HEAD
+
 Ici, toutes les routes commençant par /api/admin ne seront accessibles que par les user avec un rôle ROLE_ADMIN, la route /api/station en GET sera accessible par n'importe qui, toutes les autres méthodes de la route /api/station ne seront accessible que par les user avec le rôle ROLE_USER
-=======
-Ici, toutes les routes commençant par /api/admin ne seront accessibles que par les user avec un rôle ROLE_ADMIN, la route /api/station en GET sera accessible par n'importe qui, toutes les autres méthodes de la route /api/station ne seront accessible que par les user avec le rôle ROLE_USER
->>>>>>> ae57f07ca63b95ad4f804a6d3c4c273e32ca35d9
+
+
+# Lister et promouvoir les users	
+1. Dans le UserRepository, créer une méthode findAll et une méthode update tout à fait classiques comme on l'a déjà fait plein de fois
+	
+2. Générer un nouveau contrôlleur UserController avec une méthode GET sur /api/user qui fait le findAll et qui ne sera accessible qu'au users authentifiés (peu importe leur rôle)
+	
+3. Rajouter également une méthode PATCH promoteUser sur /api/user/{email}/promote qui va récupérer le user par son email, changer son rôle en ROLE_ADMIN puis faire un update. Cette route ne sera accessible que aux users ayant le rôle ROLE_ADMIN
