@@ -1,0 +1,27 @@
+{
+    "_id": "277b0a4e-3dc0-441c-a555-b35237719df2",
+    "colName": "promot",
+    "created": "2023-07-12T11:55:05.481Z",
+    "sortNum": 30000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "11df498d-31ad-4a4a-8c65-c74f8232200e",
+            "colId": "277b0a4e-3dc0-441c-a555-b35237719df2",
+            "containerId": "",
+            "name": "promote",
+            "url": "http://localhost:8000/api/user/test@test.com/promote",
+            "method": "PATCH",
+            "sortNum": 10000,
+            "created": "2023-07-12T11:55:56.807Z",
+            "modified": "2023-07-13T08:13:48.441Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODkyMzYwMDYsImV4cCI6MTY4OTIzOTYwNiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluQHRlc3QuY29tIn0.gU9UWf_E6xX7Zyov2K4nSLNKyD_4vTA3DIy4jZX1DvxYI9aql8FI3EsHl2MdYKd2u4V-1i8zCIvnn3ec5FKn7OaRNjhV4oUDHTCNRHWtuA6CuOkqiKOJ_HOtEMwTeusCH8IOJTUcruZUj3ZXbsKvWvZmi5Hie5aflKJMY6sdzBmJWp7ng0QAVEeF2ceHEaF-sfrhHGhhP5wEyTkvPC7LS696ReV6sIb_yDeEJk5YxidKH-b3PU-zY6nwzsgB7H0-fzpmEfNFzo-FEp8AInDzZoV_ESpx8IlsLxUHCn0ZpdXSuyYlHXNxDfWDPcAgAOgPUnJrT3NQwzL4yISF1t9xng"
+            },
+            "tests": []
+        }
+    ]
+}

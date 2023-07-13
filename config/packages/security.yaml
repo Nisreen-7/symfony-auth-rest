@@ -18,11 +18,8 @@ security:
                 success_handler: lexik_jwt_authentication.handler.authentication_success
                 failure_handler: lexik_jwt_authentication.handler.authentication_failure
                 username_path: email
-<<<<<<< HEAD
-=======
             
 
->>>>>>> 5be7a8534ecc75933eda07317777e95513640471
         api:
             pattern:   ^/api
             stateless: true
@@ -38,7 +35,9 @@ security:
     # Note: Only the *first* access control that matches will be used
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
-        - { path: ^/api/protected, roles: ROLE_USER }
+        - { path: ^/api/protected, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/user, roles: IS_AUTHENTICATED_FULLY, methods: [GET] } #route accessible à n'importe quel user connecté, en get
+        - { path: promote$, roles: ROLE_ADMIN } #route qui termine par promote accessible uniquement aux user admin
 
 when@test:
     security:
